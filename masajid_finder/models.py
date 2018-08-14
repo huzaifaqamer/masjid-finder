@@ -18,4 +18,4 @@ class Masjid(models.Model):
     isha = models.TimeField()
     jumma = models.TimeField()
     last_modified = models.DateField(auto_now=True)
-    contact = models.ManyToManyField(Contact, null=True, blank=True)
+    contact = models.ManyToManyField(Contact, blank=True)
