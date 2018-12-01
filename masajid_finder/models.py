@@ -19,3 +19,6 @@ class Masjid(models.Model):
     jumma = models.TimeField()
     last_modified = models.DateField(auto_now=True)
     contact = models.ManyToManyField(Contact, blank=True)
+
+    def __str__(self):
+        return self.name
